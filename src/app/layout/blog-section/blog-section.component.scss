@@ -1,0 +1,45 @@
+
+.blog-post {
+  padding: 0 15px;
+  .post-title {
+    h1 {
+      color: #333333;
+      font-size: 35px;
+      line-height: 45px;
+      font-weight: 700;
+      margin-top: 24px;
+    }
+  }
+  .post-info {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+    padding: 10px 0;
+    color: #8c8c8c;
+  }
+  .tags {
+    list-style: none;
+    padding: 2px;
+    margin: 0;
+    padding-left: 0px;
+    li {
+      display: inline-block;
+      color: #ffffff;
+      margin: 4px 4px;
+      padding: 10px 20px;
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      margin-left: 0px;
+      border-radius: 4px;
+      cursor: default;
+    }
+  }
+  p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #696868;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    font-family: "Poppins", sans-serif;
+  }
+}

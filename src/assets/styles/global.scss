@@ -60,6 +60,8 @@ button {
 .page-body {
   background: #ffffff;
   box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
+  width: 820px;
+  margin: auto;
 }
 
 .sub-title {
@@ -81,6 +83,7 @@ button {
 }
 
 .content-page {
+  width: 100%;
   padding-top: 30px;
   padding-bottom: 60px;
   border-top: 1px dashed #dedede;
@@ -158,4 +161,49 @@ button {
 .button-anim:hover:before {
   left: 75%;
   opacity: 1;
+}
+
+
+.form-control {
+  height: 50px;
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 2px solid transparent;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.form-control:focus {
+  border-color: #1abc9c;
+  border-width: 2px;
+}
+
+.bg-color-1 {
+  background-color: #f306a0;
+}
+
+.bg-color-2 {
+  background-color: #d60bfb;
+}
+
+.bg-color-3 {
+  background-color: #d8be10;
+}
+
+.bg-color-4 {
+  background-color: #0fd28a;
+}
+
+.bg-color-5 {
+  background-color: #f97400;
+}
+
+.bg-color-6 {
+  background-color: #08a6f3;
 }
