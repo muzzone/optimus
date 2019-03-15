@@ -1,0 +1,11 @@
+<p>
+  blog-page works!
+</p>
+
+<ng-container *ngIf="posts">
+  <app-blog-section
+    *ngFor="let post of posts; trackBy: trackByFn"
+    [post]=post
+  ></app-blog-section>
+</ng-container>
+
