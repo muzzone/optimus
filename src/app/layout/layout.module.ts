@@ -6,12 +6,14 @@ import { BlogPageComponent } from './blog-page/blog-page.component';
 import { BlogSectionComponent } from './blog-section/blog-section.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 import { PreloaderComponent } from './preloader/preloader.component';
+import { NgxSmartModalModule } from 'ngx-smart-modal';
 
 @NgModule({
   declarations: [LayoutComponent, BlogPageComponent, BlogSectionComponent, BlogPostComponent, PreloaderComponent],
   imports: [
     CommonModule,
-    LayoutRoutingModule
+    LayoutRoutingModule,
+    NgxSmartModalModule
   ]
 })
 export class LayoutModule {

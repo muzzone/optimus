@@ -4,9 +4,6 @@
       <div class="post-title">
         <a [routerLink]="['/post', post.id]"><h1>{{post.title}}</h1></a>
       </div>
-      <div class="post-info">
-        <span>November 23, 2016 / by <a href="#" target="_blank">Alex Parker</a></span>
-      </div>
       <p>{{post.body}}</p>
       <ul class="tags">
         <li class="bg-color-4" *ngFor="let tag of post.tags">#{{tag.name}}</li>

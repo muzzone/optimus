@@ -1,1 +1,11 @@
 <router-outlet></router-outlet>
+
+<ngx-smart-modal #userInfoModal identifier="userInfoModal">
+  <div class="modal-body" *ngIf="userInfoModal.hasData()">
+    <h3>User info</h3>
+    <p><b>Name:</b> &nbsp; {{userInfoModal.getData().name}}</p>
+    <p><b>Phone:</b> &nbsp; {{userInfoModal.getData().phone}}</p>
+  </div>
+  <br>
+  <button class="blog-btn" (click)="userInfoModal.close()">Close</button>
+</ngx-smart-modal>
