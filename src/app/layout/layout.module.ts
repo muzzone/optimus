@@ -5,9 +5,10 @@ import { LayoutRoutingModule } from './layout-routing.module';
 import { BlogPageComponent } from './blog-page/blog-page.component';
 import { BlogSectionComponent } from './blog-section/blog-section.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
+import { PreloaderComponent } from './preloader/preloader.component';
 
 @NgModule({
-  declarations: [LayoutComponent, BlogPageComponent, BlogSectionComponent, BlogPostComponent],
+  declarations: [LayoutComponent, BlogPageComponent, BlogSectionComponent, BlogPostComponent, PreloaderComponent],
   imports: [
     CommonModule,
     LayoutRoutingModule

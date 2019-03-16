@@ -1,3 +1,38 @@
-<p>
-  blog-post works!
-</p>
+<div class="col-md-12 page-body">
+  <div>
+    <div class="sub-title">
+      <a routerLink="/" title="Go to Home Page"><h2>Back Home</h2></a>
+      <a class="smoth-scroll"><i class="icon-bubbles"></i></a>
+    </div>
+
+    <div class="content-page">
+      <div class="blog-post" style="display: block;" *ngIf="post; else preloader">
+
+
+        <!-- Post Headline Start -->
+        <div class="post-title">
+          <h1>{{post.title}}</h1>
+        </div>
+        <!-- Post Headline End -->
+
+
+        <!-- Post Detail Start -->
+        <div class="post-info">
+          <span>November 23, 2016 / by <a href="#" target="_blank">Alex Parker</a></span>
+        </div>
+        <!-- Post Detail End -->
+
+        <p>{{post.body}}</p>
+
+        <div id="comment" class="comment">
+          <h3>Discuss about post</h3>
+        </div>
+      </div>
+
+      <ng-template #preloader>
+        <app-preloader></app-preloader>
+      </ng-template>
+    </div>
+
+  </div>
+</div>
