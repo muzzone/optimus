@@ -15,6 +15,7 @@ export class BlogPageComponent implements OnInit, OnDestroy {
 
   public posts: Post[];
   public tags: Tag[];
+  public selectedTag: string;
 
   constructor(private postService: PostService, private tagService: TagService) {
     this.subscriptions = [];
@@ -29,6 +30,10 @@ export class BlogPageComponent implements OnInit, OnDestroy {
       this.tags = res;
     })
     );
+  }
+
+  tagSelected(val) {
+    this.selectedTag = val;
   }
 
   trackByFn(index, item) {

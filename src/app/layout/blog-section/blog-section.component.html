@@ -6,7 +6,7 @@
       </div>
       <p>{{post.body}}</p>
       <ul class="tags">
-        <li class="bg-color-4" *ngFor="let tag of post.tags">#{{tag.name}}</li>
+        <li class="bg-color-4" *ngFor="let tag of post.tags">#{{tag}}</li>
       </ul>
       <a [routerLink]="['/post', post.id]" class="button button-style button-anim fa fa-long-arrow-right"><span>Read More</span></a>
     </div>

@@ -8,7 +8,7 @@ import { NgxSmartModalModule } from 'ngx-smart-modal';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
