@@ -1,3 +1,5 @@
+@import 'variables';
+
 body {
   font-family: "Poppins", sans-serif;
   background: #fafafa !important;
@@ -9,18 +11,18 @@ html {
 }
 
 ::selection {
-  background-color: #1abc9c;
+  background-color: $blog-main;
   color: #ffffff;
 }
 
 ::-moz-selection {
-  background-color: #1abc9c;
+  background-color: $blog-main;
   color: #ffffff;
 }
 
 a {
   text-decoration: none !important;
-  color: #1abc9c;
+  color: $blog-main;
 }
 
 a:hover,
@@ -28,12 +30,12 @@ a:focus,
 a:active {
   text-decoration: none;
   outline: none;
-  color: #333333;
+  color: $blog-text;
 }
 
 b {
   font-weight: 600;
-  color: #333333;
+  color: $blog-text;
 }
 
 p {
@@ -54,13 +56,14 @@ button {
 }
 
 .main-color {
-  color: #1abc9c;
+  color: $blog-main;
 }
 
 .page-body {
   background: #ffffff;
   box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
   width: 820px;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -90,96 +93,6 @@ button {
   border-bottom: 1px dashed #dedede;
 }
 
-.button {
-  border: none;
-  font-family: inherit;
-  font-size: 16px;
-  color: inherit;
-  background: none;
-  cursor: pointer;
-  padding: 10px 60px;
-  padding-left: 0px;
-  display: inline-block;
-  margin: 8px 30px;
-  margin-left: 5px;
-  letter-spacing: 1px;
-  font-weight: 600;
-  outline: none;
-  position: relative;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.button:after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-
-.button:before {
-  font-family: 'FontAwesome';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  position: relative;
-  -webkit-font-smoothing: antialiased;
-}
-
-.button-style {
-  color: #1abc9c;
-  overflow: hidden;
-}
-
-.button-style:before {
-  position: absolute;
-  font-size: 27px;
-  line-height: 38px;
-  color: #1abc9c;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.button-style:active:before {
-  color: #1abc9c;
-}
-
-.button-anim:before {
-  left: 60%;
-  opacity: 0;
-  top: 0;
-}
-
-.button-anim:hover:before {
-  left: 75%;
-  opacity: 1;
-}
-
-.blog-btn {
-  font-size: 16px;
-  letter-spacing: 0.7px;
-  height: 35px;
-  color: #FFF;
-  background: #1abc9c;
-  border: none;
-  top: 5px;
-  right: 5px;
-  bottom: 5px;
-  border-radius: 4px;
-  width: 100px;
-  text-align: center;
-  outline: none;
-}
-
-
 .form-control {
   height: 50px;
   display: block;
@@ -196,30 +109,30 @@ button {
 }
 
 .form-control:focus {
-  border-color: #1abc9c;
+  border-color: $blog-main;
   border-width: 2px;
 }
 
 .bg-color-1 {
-  background-color: #f306a0;
+  background-color: $bg-color-1;
 }
 
 .bg-color-2 {
-  background-color: #d60bfb;
+  background-color: $bg-color-2;
 }
 
 .bg-color-3 {
-  background-color: #d8be10;
+  background-color: $bg-color-3;
 }
 
 .bg-color-4 {
-  background-color: #0fd28a;
+  background-color: $bg-color-4;
 }
 
 .bg-color-5 {
-  background-color: #f97400;
+  background-color: $bg-color-5;
 }
 
 .bg-color-6 {
-  background-color: #08a6f3;
+  background-color: $bg-color-6;
 }

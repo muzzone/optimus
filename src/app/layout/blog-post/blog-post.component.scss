@@ -1,63 +1,62 @@
-.blog-post {
-  padding: 0 15px;
-}
+@import '../../../assets/styles/variables';
 
 div.blog-post {
   display: none;
   margin-bottom: 50px;
 }
 
-.blog-post .post-image img {
-  width: 100%;
-}
-
-.blog-post .post-image p {
-  text-align: center;
-  font-size: 14px;
-  margin-top: 10px;
-}
-
-.blog-post .post-image a {
-  font-weight: 600;
-}
-
-.blog-post .post-title h1 {
-  color: #333333;
-  font-size: 35px;
-  line-height: 45px;
-  font-weight: 700;
-  margin-top: 24px;
-}
-
-.blog-post .post-title h2 {
-  font-size: 25px;
-  line-height: 35px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-.blog-post .post-info {
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 500;
-  padding: 10px 0;
-  color: #8c8c8c;
-}
-
-.blog-post p {
-  font-size: 16px;
-  line-height: 30px;
-  color: #696868;
-  font-weight: 300;
-  letter-spacing: 0.8px;
-  font-family: "Poppins", sans-serif;
+.blog-post {
+  padding: 0 15px;
+  .post-image {
+    img {
+      width: 100%;
+    }
+    p {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    a {
+      font-weight: 600;
+    }
+  }
+  .post-title {
+    h1 {
+      color: $blog-text;
+      font-size: 35px;
+      line-height: 45px;
+      font-weight: 700;
+      margin-top: 24px;
+    }
+    h2 {
+      font-size: 25px;
+      line-height: 35px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+  }
+  .post-info {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+    padding: 10px 0;
+    color: #8c8c8c;
+  }
+  p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #696868;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    font-family: "Poppins", sans-serif;
+  }
 }
 
 .comment h3 {
   font-size: 25px;
   line-height: 35px;
   font-weight: 600;
-  color: #1abc9c;
+  color: $blog-main;
   margin: 35px 0;
   letter-spacing: 0.5px;
 }
@@ -77,5 +76,41 @@ div.blog-post {
     margin-left: 0px;
     border-radius: 4px;
     cursor: default;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .sub-title {
+    border-bottom: 1px dashed #cccccc;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    i {
+      font-size: 25px;
+      margin-top: 15px;
+    }
+  }
+  .blog-post {
+    .post-info {
+      font-size: 13px;
+      line-height: 29px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 14px;
+      line-height: 28px;
+      font-weight: 400;
+    }
+    .post-title {
+      h1 {
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 600;
+      }
+    }
   }
 }

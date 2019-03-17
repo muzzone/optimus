@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Post } from '../../shared/models/post.model';
 
 @Component({
@@ -6,13 +6,9 @@ import { Post } from '../../shared/models/post.model';
   templateUrl: './blog-section.component.html',
   styleUrls: ['./blog-section.component.scss']
 })
-export class BlogSectionComponent implements OnInit {
+export class BlogSectionComponent {
   @Input()
   post: Post;
 
   constructor() { }
-
-  ngOnInit() {
-  }
-
 }

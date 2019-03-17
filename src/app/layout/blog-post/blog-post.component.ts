@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { PostService } from '../../core/post.service';
 import { Subscription } from 'rxjs';
 import { Post } from '../../shared/models/post.model';
@@ -12,8 +12,8 @@ import { User } from '../../shared/models/user.model';
   templateUrl: './blog-post.component.html',
   styleUrls: ['./blog-post.component.scss']
 })
-export class BlogPostComponent implements OnInit {
-  private sub: Subscription;
+export class BlogPostComponent implements OnInit, OnDestroy {
+  private subscriptions: Subscription[];
 
   public post: Post;
   public postId: string;
@@ -27,17 +27,25 @@ export class BlogPostComponent implements OnInit {
 
   ngOnInit() {
     this.postId = this.route.snapshot.paramMap.get('id');
-    this.sub = this.postService.getPostById(this.postId).subscribe((res: Post) => {
-      this.post = res;
-    });
+    this.subscriptions.push(
+      this.postService.getPostById(this.postId).subscribe((res: Post) => {
+        this.post = res;
+      })
+    );
   }
 
   showUserInfo() {
-    this.userService.getUserById(this.post.userId).subscribe((res: User) => {
-      this.ngxSmartModalService.getModal('userInfoModal').removeData();
-      this.ngxSmartModalService.setModalData(res, 'userInfoModal');
-      this.ngxSmartModalService.open('userInfoModal');
-    });
+    this.subscriptions.push(
+      this.userService.getUserById(this.post.userId).subscribe((res: User) => {
+        this.ngxSmartModalService.getModal('userInfoModal').removeData();
+        this.ngxSmartModalService.setModalData(res, 'userInfoModal');
+        this.ngxSmartModalService.open('userInfoModal');
+      })
+    );
+  }
+
+  ngOnDestroy() {
+    this.subscriptions.forEach((sub: Subscription) => sub.unsubscribe());
   }
 
 }

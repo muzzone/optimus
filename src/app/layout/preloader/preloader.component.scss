@@ -1,3 +1,5 @@
+@import '../../../assets/styles/variables';
+
 .preloader {
   background: #ffffff;
   z-index: 99999;
@@ -15,8 +17,8 @@
   left: 50%;
   margin: -26px 0 0 -26px;
   font-size: 10px;
-  border-right: 5px solid #333333;
-  border-left: 5px solid #1abc9c;
+  border-right: 5px solid $blog-text;
+  border-left: 5px solid $blog-main;
   border-radius: 50%;
   -webkit-animation: spinner 700ms infinite linear;
   animation: spinner 700ms infinite linear;

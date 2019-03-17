@@ -1,9 +1,10 @@
+@import '../../../assets/styles/variables';
 
 .blog-post {
   padding: 0 15px;
   .post-title {
     h1 {
-      color: #333333;
+      color: $blog-text;
       font-size: 35px;
       line-height: 45px;
       font-weight: 700;
@@ -41,5 +42,27 @@
     font-weight: 300;
     letter-spacing: 0.8px;
     font-family: "Poppins", sans-serif;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .blog-post {
+    .post-info {
+      font-size: 13px;
+      line-height: 29px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 14px;
+      line-height: 28px;
+      font-weight: 400;
+    }
+    .post-title {
+      h1 {
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 600;
+      }
+    }
   }
 }

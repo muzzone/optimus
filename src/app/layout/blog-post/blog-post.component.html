@@ -8,19 +8,13 @@
     <div class="content-page">
       <div class="blog-post" style="display: block;" *ngIf="post; else preloader">
 
-
-        <!-- Post Headline Start -->
         <div class="post-title">
           <h1>{{post.title}}</h1>
         </div>
-        <!-- Post Headline End -->
 
-
-        <!-- Post Detail Start -->
         <div class="post-info">
           <span>{{post.dateOfCreation | date:'fullDate'}} / by <a href="javascript: void(0)" (click)="showUserInfo()">{{post.author}}</a></span>
         </div>
-        <!-- Post Detail End -->
 
         <p>{{post.body}}</p>
 

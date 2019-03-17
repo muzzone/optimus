@@ -1,3 +1,5 @@
+@import '../../../assets/styles/variables';
+
 .tag-select {
   width: 200px;
 }
@@ -5,4 +7,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 435px) {
+  .sub-title {
+    border-bottom: 1px dashed #cccccc;
+    padding: 30px;
+    justify-content: center;
+    h2 {
+      margin-bottom: 30px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
 }
