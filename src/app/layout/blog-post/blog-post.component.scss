@@ -61,3 +61,21 @@ div.blog-post {
   margin: 35px 0;
   letter-spacing: 0.5px;
 }
+
+.tags {
+  list-style: none;
+  padding: 2px;
+  margin: 0;
+  padding-left: 0px;
+  li {
+    display: inline-block;
+    color: #ffffff;
+    margin: 4px 4px;
+    padding: 10px 20px;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    margin-left: 0px;
+    border-radius: 4px;
+    cursor: default;
+  }
+}

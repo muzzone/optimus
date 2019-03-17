@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TagFilterPipe } from './tag-filter.pipe';
+import { FilterByTagPipe } from './filter-by-tag.pipe';
 
 @NgModule({
   imports: [
     CommonModule,
   ],
-  declarations: [TagFilterPipe],
-  exports: [TagFilterPipe]
+  declarations: [FilterByTagPipe],
+  exports: [FilterByTagPipe]
 })
 export class PipesModule { }
 

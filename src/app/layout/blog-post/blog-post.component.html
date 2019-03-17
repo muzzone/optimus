@@ -18,11 +18,15 @@
 
         <!-- Post Detail Start -->
         <div class="post-info">
-          <span>November 23, 2016 / by <a href="javascript: void(0)" (click)="showUserInfo()">Alex Parker</a></span>
+          <span>{{post.dateOfCreation | date:'fullDate'}} / by <a href="javascript: void(0)" (click)="showUserInfo()">{{post.author}}</a></span>
         </div>
         <!-- Post Detail End -->
 
         <p>{{post.body}}</p>
+
+        <ul class="tags">
+          <li class="bg-color-4" *ngFor="let tag of post.tags">#{{tag}}</li>
+        </ul>
 
         <div id="comment" class="comment">
           <h3>Discuss about post</h3>

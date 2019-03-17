@@ -34,6 +34,7 @@ export class BlogPostComponent implements OnInit {
 
   showUserInfo() {
     this.userService.getUserById(this.post.userId).subscribe((res: User) => {
+      this.ngxSmartModalService.getModal('userInfoModal').removeData();
       this.ngxSmartModalService.setModalData(res, 'userInfoModal');
       this.ngxSmartModalService.open('userInfoModal');
     });

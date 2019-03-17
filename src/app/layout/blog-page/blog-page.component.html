@@ -9,7 +9,7 @@
   </div>
   <ng-container *ngIf="posts; else preloader">
     <app-blog-section
-      *ngFor="let post of posts | tagFilter: selectedTag; trackBy: trackByFn"
+      *ngFor="let post of posts | filterByTag: selectedTag; trackBy: trackByFn"
       [post]=post
     ></app-blog-section>
   </ng-container>
