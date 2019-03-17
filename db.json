@@ -1,0 +1,109 @@
+{
+  "posts": [
+    {
+      "userId": 1,
+      "id": 1,
+      "author": "Bret",
+      "dateOfCreation": "2019-02-05T03:40:05Z",
+      "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+      "shortDescription" : "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+      "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+      "tags": ["Kazakhstan", "Russia", "Benin"]
+    },
+    {
+      "userId": 1,
+      "author": "Bret",
+      "dateOfCreation": "2018-11-26T08:08:37Z",
+      "id": 2,
+      "title": "qui est esse",
+      "shortDescription" : "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
+      "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
+      "tags": ["Mongolia", "China", "Indonesia"]
+    },
+    {
+      "userId": 2,
+      "author": "Antonette",
+      "dateOfCreation": "2018-11-19T21:31:19Z",
+      "id": 3,
+      "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+      "shortDescription" : "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut",
+      "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut",
+      "tags": ["Mongolia", "China", "Poland"]
+    },
+    {
+      "userId": 2,
+      "author": "Antonette",
+      "dateOfCreation": "2018-09-22T23:57:23Z",
+      "id": 4,
+      "title": "eum et est occaecati",
+      "shortDescription" : "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit",
+      "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit",
+      "tags": ["Benin", "China", "Indonesia"]
+    },
+    {
+      "userId": 3,
+      "author": "Samantha",
+      "dateOfCreation": "2018-07-06T07:26:48Z",
+      "id": 5,
+      "title": "nesciunt quas odio",
+      "shortDescription" : "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque",
+      "body": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque",
+      "tags": ["Kazakhstan", "Portugal", "Benin"]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "Sincere@april.biz",
+      "phone": "1-770-736-8031",
+      "website": "hildegard.org"
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "username": "Antonette",
+      "email": "Shanna@melissa.tv",
+      "phone": "010-692-6593"
+    },
+    {
+      "id": 3,
+      "name": "Clementine Bauch",
+      "username": "Samantha",
+      "email": "Nathan@yesenia.net",
+      "phone": "1-463-123-4447"
+    }
+  ],
+  "tags": [{
+    "name": "Kazakhstan",
+    "id": "1accc4e3-febf-40e1-97db-52d072babdd8"
+  }, {
+    "name": "Nicaragua",
+    "id": "d16674f0-8828-4bbf-ae33-febb012e950d"
+  }, {
+    "name": "Russia",
+    "id": "c9909b74-9d12-4509-8b22-9120fc952de5"
+  }, {
+    "name": "Mongolia",
+    "id": "6a304829-7dca-4d12-8a09-7ea47d03c47a"
+  }, {
+    "name": "China",
+    "id": "86897327-12b9-4abb-bd04-8b9dee09a9bf"
+  }, {
+    "name": "Poland",
+    "id": "7b76ba9d-5648-4ed7-9724-dbd397b5ff09"
+  }, {
+    "name": "Portugal",
+    "id": "df79d655-2c77-4a08-9a0f-9079c331e31b"
+  }, {
+    "name": "Benin",
+    "id": "7a1cdbfb-b4d6-4ccb-be22-b5ac1261aeeb"
+  }, {
+    "name": "China",
+    "id": "ba146449-764c-4aa2-90ff-58fc76b0d9f1"
+  }, {
+    "name": "Indonesia",
+    "id": "89fd06f1-64d4-4352-b014-8510ee545465"
+  }]
+}

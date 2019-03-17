@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  API_URL: 'https://my-json-server.typicode.com/muzzone/json-placeholder'
+  API_URL: 'https://my-json-server.typicode.com/muzzone/optimus'
 };
