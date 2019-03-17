@@ -23,7 +23,9 @@ export class BlogPostComponent implements OnInit, OnDestroy {
     private postService: PostService,
     private route: ActivatedRoute,
     public ngxSmartModalService: NgxSmartModalService,
-  ) { }
+  ) {
+    this.subscriptions = [];
+  }
 
   ngOnInit() {
     this.postId = this.route.snapshot.paramMap.get('id');
