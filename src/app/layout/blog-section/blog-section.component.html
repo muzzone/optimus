@@ -1,6 +1,6 @@
 <div class="content-page">
   <div class="blog-post">
-    <div class="col-md-12 blog-post">
+    <div class="col-md-12 blog-post" *ngIf="post">
       <div class="post-title">
         <a [routerLink]="['/post', post.id]"><h1>{{post.title}}</h1></a>
       </div>

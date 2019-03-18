@@ -1,9 +1,10 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { PostService } from '../../core/post.service';
-import { Subscription } from 'rxjs';
-import { Post } from '../../shared/models/post.model';
 import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs';
+
 import { NgxSmartModalService } from 'ngx-smart-modal';
+import { PostService } from '../../core/post.service';
+import { Post } from '../../shared/models/post.model';
 import { UserService } from '../../core/user.service';
 import { User } from '../../shared/models/user.model';
 

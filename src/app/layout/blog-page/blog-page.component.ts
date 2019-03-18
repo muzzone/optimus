@@ -1,7 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Observable, Subscription } from 'rxjs';
+
 import { Post } from '../../shared/models/post.model';
 import { PostService } from '../../core/post.service';
-import { Observable, Subscription } from 'rxjs';
 import { Tag } from '../../shared/models/tag.model';
 import { TagService } from '../../core/tag.service';
 
